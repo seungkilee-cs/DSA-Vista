@@ -1,0 +1,28 @@
+.explanation {
+    background-color: #2c2c2c;
+    border-left: 4px solid #61dafb;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .explanation h1, .explanation h2, .explanation h3 {
+    color: #61dafb;
+    margin-top: 0;
+  }
+  
+  .explanation p {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .explanation code {
+    background-color: #3a3a3a;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+  }
+  
