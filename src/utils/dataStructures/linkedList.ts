@@ -1,3 +1,5 @@
+import { DataStructure } from '../dataStructures';
+
 export const linkedList: DataStructure = {
     name: "Linked List",
     code: `

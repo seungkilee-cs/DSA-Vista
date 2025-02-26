@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-okaidia.css'; // Use a more colorful theme
 import 'prismjs/components/prism-python'; // Add language support as needed

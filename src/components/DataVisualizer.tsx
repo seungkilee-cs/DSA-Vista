@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import * as d3 from 'd3';
+// import * as d3 from 'd3';
 import './DataVisualizer.css';
 
 interface DataVisualizerProps {
@@ -11,7 +11,7 @@ function DataVisualizer({ data }: DataVisualizerProps) {
 
   useEffect(() => {
     if (svgRef.current) {
-      const svg = d3.select(svgRef.current);
+      // const svg = d3.select(svgRef.current);
       // Implement your D3 visualization here
     }
   }, [data]);

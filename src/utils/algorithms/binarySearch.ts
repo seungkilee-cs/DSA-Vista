@@ -1,3 +1,5 @@
+import { Algorithm } from '../algorithms';
+
 export const binarySearch: Algorithm = {
     name: "Binary Search",
     code: `
