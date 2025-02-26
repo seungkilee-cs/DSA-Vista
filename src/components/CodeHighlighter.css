@@ -1,19 +1,28 @@
 .code-highlighter {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .code-highlighter pre {
-    margin: 0;
-    font-family: 'Fira Code', monospace;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .code-highlighter code {
-    color: #d4d4d4;
-  }
-  
+  background-color: #272822;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 1em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.code-line {
+  display: block;
+  position: relative;
+  padding-left: 4em;
+}
+
+.line-number {
+  position: absolute;
+  left: 0;
+  color: #75715e;
+  text-align: right;
+  width: 3em;
+  padding-right: 1em;
+  user-select: none;
+}
+
+.highlight-line {
+  background-color: rgba(255, 255, 255, 0.1);
+}

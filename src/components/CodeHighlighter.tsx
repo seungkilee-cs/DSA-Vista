@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism.css';
+import 'prismjs/themes/prism-okaidia.css'; // Use a more colorful theme
+import 'prismjs/components/prism-python'; // Add language support as needed
 import './CodeHighlighter.css';
 
 interface CodeHighlighterProps {
@@ -19,13 +20,14 @@ function CodeHighlighter({ code, language, currentLine }: CodeHighlighterProps) 
   }, [code, language]);
 
   return (
-    <pre>
+    <pre className="code-highlighter">
       <code ref={codeRef} className={`language-${language}`}>
         {code.split('\n').map((line, index) => (
           <span
             key={index}
-            className={index + 1 === currentLine ? 'highlight-line' : ''}
+            className={`code-line ${index + 1 === currentLine ? 'highlight-line' : ''}`}
           >
+            <span className="line-number">{index + 1}</span>
             {line}
             {'\n'}
           </span>
