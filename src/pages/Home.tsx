@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           <h2>Data Structures</h2>
           <div className="card">
             <ul>
-              <li><Link to="/data-structure/linkedList">Linked List</Link></li>
+              <li><Link to="/DSA-Vista/data-structure/linkedList">Linked List</Link></li>
             </ul>
           </div>
         </div>
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           <h2>Algorithms</h2>
           <div className="card">
             <ul>
-              <li><Link to="/algorithm/binarySearch">Binary Search</Link></li>
+              <li><Link to="/DSA-Vista/algorithm/binarySearch">Binary Search</Link></li>
             </ul>
           </div>
         </div>

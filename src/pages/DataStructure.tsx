@@ -9,11 +9,15 @@ function DataStructure() {
   const { name } = useParams<{ name: string }>();
   const ds = dataStructures[name as keyof typeof dataStructures];
 
+  if (!ds) {
+    return <div>Data structure not found</div>;
+  }
+
   return (
     <div>
       <h1>{ds.name}</h1>
       <CodeHighlighter code={ds.code} language={ds.language} currentLine={1} />
-      <DataVisualizer data={ds.sampleData} />
+      <DataVisualizer data={ds.sampleData} type="dataStructure" name={name as string} />
       <Explanation markdown={ds.explanation} />
     </div>
   );

@@ -21,7 +21,7 @@ function Algorithm() {
       <pre>{JSON.stringify(algorithm.sampleInput, null, 2)}</pre>
       <h2>Sample Output</h2>
       <pre>{JSON.stringify(algorithm.sampleOutput, null, 2)}</pre>
-      <DataVisualizer data={algorithm.sampleInput} />
+      <DataVisualizer data={algorithm.sampleInput} type="algorithm" name={name as string} />
       <Explanation markdown={algorithm.explanation} />
     </div>
   );

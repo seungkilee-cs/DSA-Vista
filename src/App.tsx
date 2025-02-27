@@ -13,9 +13,9 @@ function App() {
           <ThemeToggle />
           <div className="main-content">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/data-structure/:name" element={<DataStructure />} />
-              <Route path="/algorithm/:name" element={<Algorithm />} />
+              <Route path="/DSA-Vista/" element={<Home />} />
+              <Route path="/DSA-Vista/data-structure/:name" element={<DataStructure />} />
+              <Route path="/DSA-Vista/algorithm/:name" element={<Algorithm />} />
             </Routes>
           </div>
         </div>
